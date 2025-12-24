@@ -25,7 +25,7 @@ open CMD
 ## stap 3
 create next js app.
 ## stap 4
-''' 
+```js
 npx create-next-app
 cd project 
 npm run dev
