@@ -61,4 +61,148 @@ button:hover{
     background-color: aquamarine;
     
 }
-   
+/* hamburger hidden for desktop */
+.menu{
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+/* ---------------- RESPONSIVE ---------------- */
+
+/* Tablet */
+@media (max-width: 900px){
+    h1{
+        font-size: 2.5rem;
+    }
+
+    ul{
+        font-size: 1.2rem;
+    }
+
+    button{
+        padding: 10px 28px;
+        font-size: 16px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px){
+    .container{
+        flex-wrap: wrap;
+    }
+
+    ul{
+        display: none;   /* hide menu */
+        width: 100%;
+        flex-direction: column;
+        gap: 15px;
+        background: darkgray;
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    button{
+        display: none; /* mobile এ button hide */
+    }
+
+    .menu{
+        display: block; /* show hamburger */
+    }
+}
+
+
+/*  
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav{
+  width: 100%;
+}
+
+.container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: darkgray;
+  padding: 20px 30px;
+}
+
+.logo{
+  font-size: 3rem;
+}
+
+.nav-links{
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  font-size: 1.4rem;
+}
+
+.nav-links li{
+  cursor: pointer;
+}
+
+.nav-links li:hover{
+  color: red;
+}
+
+.btn{
+  padding: 12px 35px;
+  border-radius: 40px;
+  border: 2px solid black;
+  font-size: 18px;
+}
+
+.btn:hover{
+  background-color: aquamarine;
+}
+
+.menu{
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+/* ---------- RESPONSIVE ---------- */
+
+@media (max-width: 900px){
+  .logo{
+    font-size: 2.4rem;
+  }
+
+  .nav-links{
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 600px){
+  .container{
+    flex-wrap: wrap;
+  }
+
+  .nav-links{
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px 0;
+    background: darkgray;
+    gap: 15px;
+  }
+
+  .nav-links.show{
+    display: flex;
+  }
+
+  .btn{
+    display: none;
+  }
+
+  .menu{
+    display: block;
+  }
+} */
